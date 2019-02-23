@@ -1,10 +1,4 @@
 // Code your solution here:
-function driversWithRevenueOver(drivers, revenueOver) {
-  return drivers.map(function(driver){
-    if (driver.revenue) > revenueOver {
-      return driver;
-    }
-  });
+function driversWithRevenue(drivers, revenue) {
+  return drivers.filter(function (driver) {return driver.revenue > revenue;});
 }
-
-
