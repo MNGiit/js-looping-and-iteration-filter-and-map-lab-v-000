@@ -19,18 +19,6 @@ function exactMatch(drivers, pair) {
   })
 }
 
-function exactMatchToList() {
-  
+function exactMatchToList(drivers, pair) {
+  return exactMatch(drivers, pair).map(function (driver) {return driver.name;});
 }
-
-
-
-exactMatchToList()
-returns an array of names for all matching drivers ‣
-ReferenceError: exactMatchToList is not defined
-    at Context.<anonymous> (test/indexTest.js:75:7)expect(exactMatchToList(extendedDrivers, { name: 'Sally' })).to.eql([ 'Sally', 'Sally' ]);
-expect(exactMatchToList(extendedDrivers, { revenue: 200 })).to.eql([ 'Annette', 'Sally' ]);
-returns an empty array if there is no match ‣
-ReferenceError: exactMatchToList is not defined
-    at Context.<anonymous> (test/indexTest.js:81:7)expect(exactMatchToList(extendedDrivers, { revenue: 500 })).to.eql([]);
-expect(exactMatchToList(extendedDrivers, { name: 'Alex' })).to.eql([])
