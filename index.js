@@ -7,8 +7,10 @@ function driverNamesWithRevenueOver(drivers, revenue) {
   return driversWithRevenueOver(drivers, revenue).map(function (driver) {return driver.name;});
 }
 
-function exactMatch() {
-  
+// 2nd argument is a key value pair and looks like { something: value }
+function exactMatch(drivers, pair) {
+  const matchedDrivers = drivers.map(function (pair) {return driver.revenue === pair.revenue});
+  return 
 }
 
 
